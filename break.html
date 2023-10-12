@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Breakdown Assistant</title>
+    <link rel="stylesheet" href="break.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vehicle Breakdown Assistant</h1>
+    </header>
+
+    <main>
+        <section class="service-request">
+            <h2>Request Assistance</h2>
+            <form id="service-form">
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <label for="issue">Issue:</label>
+                <textarea id="issue" required></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section class="service-finder">
+            <h2>Find Nearby Services</h2>
+            <!-- Service provider results will be displayed here -->
+            <ul id="service-provider-list"></ul>
+        </section>
+    </main>
+
+    <script src="break.js"></script>
+</body>
+
+</html>
